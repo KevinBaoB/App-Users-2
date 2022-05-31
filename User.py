@@ -25,7 +25,7 @@ class User:
         self.post.append(str)
 
     def delete_post(self, index):
-        self.index = index
+        self.index = index -1
         print(f"Deleting post number: {self.index + 1} ")
         self.post.pop(int(self.index))
 
@@ -36,6 +36,7 @@ print(kevin)
 
 kevin.make_post("I made a post")
 kevin.make_post('Another post')
-kevin.delete_post(0)
+print(kevin.post)
+kevin.delete_post(1)
 
 print(kevin.post)
