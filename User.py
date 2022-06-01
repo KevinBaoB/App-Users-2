@@ -27,6 +27,7 @@ class User:
     def delete_post(self, index):
         self.index = index -1
         print(f"Deleting post number: {self.index + 1} ")
+        del self.str
         self.post.pop(int(self.index))
 
 
